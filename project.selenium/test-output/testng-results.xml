@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="1" failed="2" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-10-12T21:15:28 EDT" name="Regression" finished-at="2022-10-12T21:15:52 EDT" duration-ms="23632">
+    <groups>
+    </groups>
+    <test started-at="2022-10-12T21:15:28 EDT" name="it" finished-at="2022-10-12T21:15:52 EDT" duration-ms="23632">
+      <class name="TestNG.bookstest">
+        <test-method is-config="true" signature="Ibrowsers(java.lang.String,java.lang.String)[pri:0, instance:TestNG.bookstest@130c12b7]" started-at="2022-10-12T21:15:28 EDT" name="Ibrowsers" finished-at="2022-10-12T21:15:39 EDT" duration-ms="10951" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.facebook.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Ibrowsers -->
+        <test-method signature="f()[pri:0, instance:TestNG.bookstest@130c12b7]" started-at="2022-10-12T21:15:39 EDT" name="f" finished-at="2022-10-12T21:15:39 EDT" duration-ms="141" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"link text","selector":"Books"}
+  (Session info: chrome=106.0.5249.119)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'Apples-Air', ip: '2600:4040:26a7:6c00:cdef:5151:f8ee:c017%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.5', java.version: '17.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [869a458e2ddd41eddac1146152b29eb3, findElement {using=link text, value=Books}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/dg/2vfqmxbj363...}, goog:chromeOptions: {debuggerAddress: localhost:63379}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:63379/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 869a458e2ddd41eddac1146152b29eb3]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Books"}
+  (Session info: chrome=106.0.5249.119)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'Apples-Air', ip: '2600:4040:26a7:6c00:cdef:5151:f8ee:c017%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.5', java.version: '17.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [869a458e2ddd41eddac1146152b29eb3, findElement {using=link text, value=Books}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/dg/2vfqmxbj363...}, goog:chromeOptions: {debuggerAddress: localhost:63379}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:63379/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 869a458e2ddd41eddac1146152b29eb3
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+at Amazon_pages.HomePage.BooksClick(HomePage.java:29)
+at TestNG.bookstest.f(bookstest.java:27)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method signature="searchverification()[pri:2, instance:TestNG.bookstest@130c12b7]" started-at="2022-10-12T21:15:52 EDT" name="searchverification" finished-at="2022-10-12T21:15:52 EDT" depends-on-methods="TestNG.bookstest.f" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TestNG.bookstest.searchverification() on instance TestNG.bookstest@130c12b7 depends on not successfully finished methods 
+[TestNG.bookstest.f() on instance TestNG.bookstest@130c12b7]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TestNG.bookstest.searchverification() on instance TestNG.bookstest@130c12b7 depends on not successfully finished methods 
+[TestNG.bookstest.f() on instance TestNG.bookstest@130c12b7]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchverification -->
+      </class> <!-- TestNG.bookstest -->
+      <class name="TestNG.Providing">
+        <test-method is-config="true" signature="Ibrowsers(java.lang.String,java.lang.String)[pri:0, instance:TestNG.Providing@51c668e3]" started-at="2022-10-12T21:15:39 EDT" name="Ibrowsers" finished-at="2022-10-12T21:15:45 EDT" duration-ms="5306" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.facebook.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Ibrowsers -->
+        <test-method signature="f(java.lang.String,java.lang.String)[pri:0, instance:TestNG.Providing@51c668e3]" started-at="2022-10-12T21:15:45 EDT" name="f" data-provider="dp" finished-at="2022-10-12T21:15:47 EDT" duration-ms="2674" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tested]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method signature="f(java.lang.String,java.lang.String)[pri:0, instance:TestNG.Providing@51c668e3]" started-at="2022-10-12T21:15:47 EDT" name="f" data-provider="dp" finished-at="2022-10-12T21:15:52 EDT" duration-ms="4388" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[5678976]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=106.0.5249.119)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'Apples-Air', ip: '2600:4040:26a7:6c00:cdef:5151:f8ee:c017%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.5', java.version: '17.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c0a85ebea97f5878682071b8dd7843bd, sendKeysToElement {id=a5308ab6-8150-42f5-a981-5fd348217997, value=[Ljava.lang.CharSequence;@75f57473}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/dg/2vfqmxbj363...}, goog:chromeOptions: {debuggerAddress: localhost:63439}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:63439/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (c0a85ebea97f5878682071b8dd7843bd)] -> name: email]
+Session ID: c0a85ebea97f5878682071b8dd7843bd]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=106.0.5249.119)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'Apples-Air', ip: '2600:4040:26a7:6c00:cdef:5151:f8ee:c017%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.5', java.version: '17.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c0a85ebea97f5878682071b8dd7843bd, sendKeysToElement {id=a5308ab6-8150-42f5-a981-5fd348217997, value=[Ljava.lang.CharSequence;@75f57473}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/dg/2vfqmxbj363...}, goog:chromeOptions: {debuggerAddress: localhost:63439}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:63439/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (c0a85ebea97f5878682071b8dd7843bd)] -> name: email]
+Session ID: c0a85ebea97f5878682071b8dd7843bd
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at jdk.proxy2/jdk.proxy2.$Proxy17.sendKeys(Unknown Source)
+at facebookpages.home.emailfield(home.java:17)
+at TestNG.Providing.f(Providing.java:14)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+      </class> <!-- TestNG.Providing -->
+    </test> <!-- it -->
+  </suite> <!-- Regression -->
+</testng-results>

@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Regression</th></tr>
+<tr><td><a href="#t0">it</a></td><td class="num">1</td><td class="num attn">1</td><td class="num">0</td><td class="num attn">2</td><td class="num">23,632</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Regression</th></tr></tbody><tbody id="t0"><tr><th colspan="4">it &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">TestNG.Providing</td><td><a href="#m0">f</a></td><td rowspan="1">1665623747697</td><td rowspan="1">4388</td></tr><tr class="failedodd"><td rowspan="1">TestNG.bookstest</td><td><a href="#m1">f</a></td><td rowspan="1">1665623739518</td><td rowspan="1">141</td></tr><tr><th colspan="4">it &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">TestNG.bookstest</td><td><a href="#m2">searchverification</a></td><td rowspan="1">1665623752108</td><td rowspan="1">0</td></tr><tr><th colspan="4">it &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">TestNG.Providing</td><td><a href="#m3">f</a></td><td rowspan="1">1665623745020</td><td rowspan="1">2674</td></tr></tbody>
+</table>
+<h2>it</h2><h3 id="m0">TestNG.Providing#f</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>test</td><td>5678976</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=106.0.5249.119)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;Apples-Air&apos;, ip: &apos;2600:4040:26a7:6c00:cdef:5151:f8ee:c017%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.5&apos;, java.version: &apos;17.0.4&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c0a85ebea97f5878682071b8dd7843bd, sendKeysToElement {id=a5308ab6-8150-42f5-a981-5fd348217997, value=[Ljava.lang.CharSequence;@75f57473}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/dg/2vfqmxbj363...}, goog:chromeOptions: {debuggerAddress: localhost:63439}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:63439/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (c0a85ebea97f5878682071b8dd7843bd)] -&gt; name: email]
+Session ID: c0a85ebea97f5878682071b8dd7843bd
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.sendKeys(Unknown Source)
+	at facebookpages.home.emailfield(home.java:17)
+	at TestNG.Providing.f(Providing.java:14)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">TestNG.bookstest#f</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Books&quot;}
+  (Session info: chrome=106.0.5249.119)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;Apples-Air&apos;, ip: &apos;2600:4040:26a7:6c00:cdef:5151:f8ee:c017%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.5&apos;, java.version: &apos;17.0.4&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [869a458e2ddd41eddac1146152b29eb3, findElement {using=link text, value=Books}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/dg/2vfqmxbj363...}, goog:chromeOptions: {debuggerAddress: localhost:63379}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:63379/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 869a458e2ddd41eddac1146152b29eb3
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
+	at Amazon_pages.HomePage.BooksClick(HomePage.java:29)
+	at TestNG.bookstest.f(bookstest.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">TestNG.bookstest#searchverification</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method TestNG.bookstest.searchverification() on instance TestNG.bookstest@130c12b7 depends on not successfully finished methods 
+[TestNG.bookstest.f() on instance TestNG.bookstest@130c12b7]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 8 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">TestNG.Providing#f</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>tested</td><td>12345</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
